@@ -3,7 +3,7 @@
 #include <conio.h>
 using namespace std;
 
-bool isPalindrome(const string &str) {
+bool isPalindrome(const string &str) {           
     int length = str.length();
     for (int i = 0; i < length / 2; i++) {
         if (str[i] != str[length - i - 1])
@@ -19,8 +19,8 @@ int main() {
         cout << "Enter a string: ";
         getline(cin,input);
 
-        cout << "Enter Any Key to Proceed (ESC to EXIT): " << endl;
-        if (_getch() == 27) {
+        cout << "Enter Any Key to Proceed (ESC to EXIT): " << endl;      // key input (ESC exit) else (Proceed to check)
+        if (_getch() == 27) {                                           // check ESC entered
             cout << "Quitting Program" << endl;
             break;
         } 
